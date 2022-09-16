@@ -26,7 +26,7 @@ body {
 h1 {
   @extend %h-shared;
   font-size: 30px;
-  
+
 }
 
 h2 {
@@ -166,7 +166,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 /* Contact page submit styling */
-submit {
+input[type=submit] {
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
@@ -205,7 +205,7 @@ submit {
   margin: 0;
 }
 
-/* Enable larger grid item 
+/* Enable larger grid item
 .grid__item:last-child {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
@@ -215,7 +215,7 @@ submit {
 /* About page table */
 .table {
   text-align: left;
-  margin-left:25%; 
+  margin-left:25%;
   margin-right:35%;
 }
 

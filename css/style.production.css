@@ -148,6 +148,10 @@ button:hover, .button:hover, button:focus, .button:focus {
   text-align: center;
 }
 
+#img-link {
+    text-decoration: none;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +190,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 /* Contact page submit styling */
-submit {
+input[type=submit]{
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
