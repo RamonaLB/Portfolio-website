@@ -206,6 +206,11 @@ input[type=submit]{
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
+.contact_form {
+	padding: 50px;
+	text-align: left;
+}
+
 /* Work page container grid */
 /* start grid fallback */
 .grid__item {
