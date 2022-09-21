@@ -127,6 +127,15 @@ button:hover, .button:hover, button:focus, .button:focus {
   border-radius: 50%;
 }
 
+@media all and (max-width : 780px) {
+  .profile__portrait {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .page-footer {
   clear: both;
   display: flex;
@@ -198,6 +207,7 @@ input[type=submit] {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: 300px 300px;
   grid-gap: 20px;
   margin: 0;
