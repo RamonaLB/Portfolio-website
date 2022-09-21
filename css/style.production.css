@@ -128,12 +128,23 @@ button:hover, .button:hover, button:focus, .button:focus {
   }
 }
 
+
+
 /* Profile positioning */
 .profile__portrait {
   float: left;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+}
+
+@media all and (max-width : 780px) {
+  .profile__portrait {
+    float: none;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
 }
 
 .page-footer {
@@ -223,7 +234,7 @@ input[type=submit]{
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   -ms-grid-rows: auto 20px auto;
   grid-template-rows: auto auto;
   grid-gap: 20px;
